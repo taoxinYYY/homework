@@ -10,8 +10,8 @@ import java.awt.event.MouseEvent;
 /**
  * Created by DELL on 2018/7/12.
  */
-public class ScendDay extends JFrame {
-    public ScendDay() {
+public class Plate extends JFrame {
+    public Plate() {
         String value;
         this.setSize(800, 600);
         this.setTitle("accoun-log");
@@ -52,7 +52,7 @@ public class ScendDay extends JFrame {
         btnok.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(ScendDay.this,
+                JOptionPane.showMessageDialog(Plate.this,
                         title.getText()+","+account.getText()+","+password.getText()+","+remark.getText());
             }
         });
@@ -70,6 +70,6 @@ public class ScendDay extends JFrame {
 
 
 public static void main(String[] args) {
-    ScendDay ScendDay = new ScendDay();
+    Plate plate = new Plate();
 }
 }
